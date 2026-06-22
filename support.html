@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Support · Nitid</title>
+<meta name="description" content="Support and help for Nitid, a local-first document scanner. / Soporte y ayuda de Nitid, un escáner de documentos local-first.">
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --fg:#e7e9ee; --muted:#9aa1ad;
+    --accent:#4c8dff; --border:#262b35; --maxw:760px;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f7f9; --card:#ffffff; --fg:#1a1d23; --muted:#5b626d; --border:#e4e7ec; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; padding:32px 18px;}
+  .wrap{max-width:var(--maxw); margin:0 auto}
+  .card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:28px 26px;}
+  header.top{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:22px; flex-wrap:wrap}
+  .brand{display:flex; align-items:center; gap:12px}
+  .logo{width:40px; height:40px; border-radius:10px; background:linear-gradient(135deg,#4c8dff,#7b5cff); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px}
+  .brand h1{font-size:18px; margin:0; line-height:1.2}
+  .brand .sub{color:var(--muted); font-size:13px}
+  .toggle{display:inline-flex; border:1px solid var(--border); border-radius:999px; overflow:hidden}
+  .toggle button{appearance:none; border:0; background:transparent; color:var(--muted); padding:7px 14px; font-size:13px; font-weight:600; cursor:pointer;}
+  .toggle button.active{background:var(--accent); color:#fff}
+  h2.doc-title{font-size:24px; margin:6px 0 4px}
+  .updated{color:var(--muted); font-size:13px; margin:0 0 18px}
+  h3{font-size:16px; margin:24px 0 6px}
+  p{margin:8px 0}
+  ul{margin:8px 0; padding-left:20px}
+  li{margin:4px 0}
+  a{color:var(--accent)}
+  .contact{margin-top:18px; padding:16px; border:1px solid var(--border); border-radius:12px; background:rgba(76,141,255,.08)}
+  .contact a{font-weight:700}
+  .nav{margin-top:14px; font-size:13px}
+  footer{color:var(--muted); font-size:12px; text-align:center; margin-top:22px}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="logo">N</div>
+      <div>
+        <h1>Nitid</h1>
+        <div class="sub" data-es="Escáner de documentos local-first" data-en="Local-first document scanner"></div>
+      </div>
+    </div>
+    <div class="toggle" role="group" aria-label="Language">
+      <button id="btn-es" class="active" type="button">Español</button>
+      <button id="btn-en" type="button">English</button>
+    </div>
+  </header>
+
+  <main class="card">
+    <!-- ============ ESPAÑOL ============ -->
+    <section id="es" lang="es">
+      <h2 class="doc-title">Soporte de Nitid</h2>
+      <p class="updated">¿Necesitas ayuda? Aquí están las respuestas más comunes.</p>
+
+      <h3>Cómo usar Nitid</h3>
+      <ul>
+        <li>Toca el botón de escanear para capturar un documento con la cámara, o importa una imagen desde tu galería.</li>
+        <li>Reordena, rota, elimina páginas y aplica filtros de nitidez desde el editor.</li>
+        <li>Organiza con carpetas, favoritos y búsqueda por título o carpeta.</li>
+        <li>Exporta a PDF o comparte por el menú del sistema cuando tú lo decidas.</li>
+      </ul>
+
+      <h3>Privacidad y tus datos</h3>
+      <p>Nitid es local-first: tus documentos y su texto se guardan solo en tu dispositivo. Para borrar datos, elimina cualquier documento o usa Ajustes → Borrar todos los datos. Desinstalar la app también elimina los datos locales.</p>
+
+      <h3>Nitid Pro · suscripciones</h3>
+      <ul>
+        <li><strong>Restaurar compras:</strong> Ajustes → Restaurar compras (usa la misma cuenta de App Store / Google Play con la que compraste).</li>
+        <li><strong>Cancelar (iOS):</strong> Ajustes del iPhone → tu nombre → Suscripciones → Nitid → Cancelar.</li>
+        <li><strong>Cancelar (Android):</strong> Google Play → Perfil → Pagos y suscripciones → Suscripciones → Nitid → Cancelar.</li>
+        <li><strong>Reembolsos:</strong> los gestiona Apple o Google según sus políticas; no podemos emitirlos directamente.</li>
+      </ul>
+
+      <h3>Permisos</h3>
+      <ul>
+        <li><strong>Cámara:</strong> solo para escanear; la imagen se guarda en local.</li>
+        <li><strong>Fotos / Galería:</strong> solo para importar las imágenes que tú seleccionas.</li>
+      </ul>
+
+      <h3>Problemas comunes</h3>
+      <ul>
+        <li><strong>La cámara no abre:</strong> revisa que diste permiso de cámara en los ajustes del sistema.</li>
+        <li><strong>No puedo importar fotos:</strong> habilita el permiso de Fotos para Nitid.</li>
+        <li><strong>El texto reconocido (OCR) falla:</strong> el OCR corre en el dispositivo; usa imágenes nítidas y bien iluminadas.</li>
+        <li><strong>No encuentro un PDF exportado:</strong> al exportar eliges el destino (Archivos, compartir, etc.); revisa esa ubicación.</li>
+      </ul>
+
+      <div class="contact">
+        <p style="margin:0 0 4px"><strong>Contacto</strong></p>
+        <p style="margin:0">Escríbenos a <a href="mailto:junsae.co@gmail.com">junsae.co@gmail.com</a>. Respondemos lo antes posible.</p>
+      </div>
+      <p class="nav"><a href="./index.html">Política de privacidad</a></p>
+    </section>
+
+    <!-- ============ ENGLISH ============ -->
+    <section id="en" lang="en" hidden>
+      <h2 class="doc-title">Nitid Support</h2>
+      <p class="updated">Need help? Here are the most common answers.</p>
+
+      <h3>How to use Nitid</h3>
+      <ul>
+        <li>Tap the scan button to capture a document with the camera, or import an image from your library.</li>
+        <li>Reorder, rotate, delete pages and apply sharpening filters from the editor.</li>
+        <li>Organize with folders, favorites and search by title or folder.</li>
+        <li>Export to PDF or share via the system menu whenever you decide.</li>
+      </ul>
+
+      <h3>Privacy and your data</h3>
+      <p>Nitid is local-first: your documents and their text are stored only on your device. To delete data, remove any document or use Settings → Clear all data. Uninstalling the app also removes local data.</p>
+
+      <h3>Nitid Pro · subscriptions</h3>
+      <ul>
+        <li><strong>Restore purchases:</strong> Settings → Restore purchases (use the same App Store / Google Play account you bought with).</li>
+        <li><strong>Cancel (iOS):</strong> iPhone Settings → your name → Subscriptions → Nitid → Cancel.</li>
+        <li><strong>Cancel (Android):</strong> Google Play → Profile → Payments &amp; subscriptions → Subscriptions → Nitid → Cancel.</li>
+        <li><strong>Refunds:</strong> handled by Apple or Google under their policies; we cannot issue them directly.</li>
+      </ul>
+
+      <h3>Permissions</h3>
+      <ul>
+        <li><strong>Camera:</strong> only to scan; the image is saved locally.</li>
+        <li><strong>Photos / Library:</strong> only to import the images you select.</li>
+      </ul>
+
+      <h3>Common issues</h3>
+      <ul>
+        <li><strong>Camera won't open:</strong> check that you granted camera permission in system settings.</li>
+        <li><strong>Can't import photos:</strong> enable the Photos permission for Nitid.</li>
+        <li><strong>Text recognition (OCR) fails:</strong> OCR runs on device; use sharp, well-lit images.</li>
+        <li><strong>Can't find an exported PDF:</strong> when exporting you choose the destination (Files, share, etc.); check that location.</li>
+      </ul>
+
+      <div class="contact">
+        <p style="margin:0 0 4px"><strong>Contact</strong></p>
+        <p style="margin:0">Email us at <a href="mailto:junsae.co@gmail.com">junsae.co@gmail.com</a>. We reply as soon as possible.</p>
+      </div>
+      <p class="nav"><a href="./index.html">Privacy Policy</a></p>
+    </section>
+  </main>
+
+  <footer>© 2026 Nitid · <span data-es="Soporte" data-en="Support"></span></footer>
+</div>
+
+<script>
+(function(){
+  var es=document.getElementById('es'), en=document.getElementById('en');
+  var bEs=document.getElementById('btn-es'), bEn=document.getElementById('btn-en');
+  function set(lang){
+    var isEs = lang==='es';
+    es.hidden=!isEs; en.hidden=isEs;
+    bEs.classList.toggle('active',isEs); bEn.classList.toggle('active',!isEs);
+    document.documentElement.lang=lang;
+    document.querySelectorAll('[data-es]').forEach(function(n){
+      n.textContent = isEs ? n.getAttribute('data-es') : n.getAttribute('data-en');
+    });
+    try{ location.hash = isEs ? '' : 'en'; }catch(e){}
+  }
+  bEs.addEventListener('click',function(){set('es')});
+  bEn.addEventListener('click',function(){set('en')});
+  var initial = (location.hash.replace('#','')==='en') ? 'en'
+              : ((navigator.language||'es').slice(0,2)==='en' ? 'en' : 'es');
+  set(initial);
+})();
+</script>
+</body>
+</html>
