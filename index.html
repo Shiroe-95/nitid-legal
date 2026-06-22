@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy · Nitid</title>
+<meta name="description" content="Privacy Policy for Nitid, a local-first document scanner. / Política de privacidad de Nitid, un escáner de documentos local-first.">
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --fg:#e7e9ee; --muted:#9aa1ad;
+    --accent:#4c8dff; --border:#262b35; --maxw:760px;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f7f9; --card:#ffffff; --fg:#1a1d23; --muted:#5b626d; --border:#e4e7ec; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:32px 18px;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto}
+  .card{
+    background:var(--card); border:1px solid var(--border);
+    border-radius:16px; padding:28px 26px;
+  }
+  header.top{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:22px; flex-wrap:wrap}
+  .brand{display:flex; align-items:center; gap:12px}
+  .logo{width:40px; height:40px; border-radius:10px; background:linear-gradient(135deg,#4c8dff,#7b5cff); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:18px}
+  .brand h1{font-size:18px; margin:0; line-height:1.2}
+  .brand .sub{color:var(--muted); font-size:13px}
+  .toggle{display:inline-flex; border:1px solid var(--border); border-radius:999px; overflow:hidden}
+  .toggle button{
+    appearance:none; border:0; background:transparent; color:var(--muted);
+    padding:7px 14px; font-size:13px; font-weight:600; cursor:pointer;
+  }
+  .toggle button.active{background:var(--accent); color:#fff}
+  h2.doc-title{font-size:24px; margin:6px 0 4px}
+  .updated{color:var(--muted); font-size:13px; margin:0 0 18px}
+  h3{font-size:16px; margin:24px 0 6px}
+  p{margin:8px 0}
+  ul{margin:8px 0; padding-left:20px}
+  li{margin:4px 0}
+  a{color:var(--accent)}
+  .intro{color:var(--fg)}
+  footer{color:var(--muted); font-size:12px; text-align:center; margin-top:22px}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="logo">N</div>
+      <div>
+        <h1>Nitid</h1>
+        <div class="sub" data-es="Escáner de documentos local-first" data-en="Local-first document scanner"></div>
+      </div>
+    </div>
+    <div class="toggle" role="group" aria-label="Language">
+      <button id="btn-es" class="active" type="button">Español</button>
+      <button id="btn-en" type="button">English</button>
+    </div>
+  </header>
+
+  <main class="card">
+    <!-- ============ ESPAÑOL ============ -->
+    <section id="es" lang="es">
+      <h2 class="doc-title">Política de privacidad</h2>
+      <p class="updated">Última actualización: 19 jun 2026</p>
+
+      <p class="intro">Nitid es un escáner de documentos local-first. El principio es simple: tus documentos son tuyos y se quedan en tu dispositivo.</p>
+
+      <h3>1. Qué datos tratamos</h3>
+      <ul>
+        <li>Documentos e imágenes que escaneas o importas, junto con su título, carpeta, etiquetas y texto reconocido.</li>
+        <li>Preferencias de la app (tamaño de PDF por defecto, vibración háptica, estado de la introducción).</li>
+      </ul>
+      <p>Todo esto se guarda únicamente en el almacenamiento local de tu dispositivo (AsyncStorage y el sistema de archivos de la app). Nitid no dispone de servidores propios para almacenar tus documentos.</p>
+
+      <h3>2. Permisos del dispositivo</h3>
+      <ul>
+        <li>Cámara: se usa exclusivamente para que captures documentos. La imagen se guarda en local.</li>
+        <li>Fotos / Galería: se usa exclusivamente para importar las imágenes que tú seleccionas.</li>
+      </ul>
+      <p>Estos permisos solo se activan por una acción tuya y nunca para recopilar datos en segundo plano.</p>
+
+      <h3>3. Qué NO hacemos</h3>
+      <ul>
+        <li>NO subimos tus documentos automáticamente a ninguna nube.</li>
+        <li>NO entrenamos modelos de IA con tus documentos.</li>
+        <li>NO mostramos anuncios ni rastreamos el contenido de tus archivos con fines publicitarios.</li>
+        <li>NO vendemos ni compartimos el contenido de tus documentos con terceros.</li>
+      </ul>
+
+      <h3>4. Compartir y exportar</h3>
+      <p>Compartir o exportar un documento (por ejemplo, generar un PDF o usar el menú de compartir del sistema) siempre es una acción manual que tú inicias. En ese momento, el archivo sale de la app únicamente hacia el destino que tú elijas (Archivos, AirDrop, correo, etc.).</p>
+
+      <h3>5. Reconocimiento de texto (OCR)</h3>
+      <p>El reconocimiento de texto está diseñado para ejecutarse en el dispositivo. La app no envía imágenes a servicios externos para extraer texto.</p>
+
+      <h3>6. Compras y suscripciones (Nitid Pro)</h3>
+      <p>Si compras Nitid Pro, el pago lo procesa Apple (App Store) o Google (Google Play) según tu tienda; nosotros nunca vemos ni guardamos los datos de tu tarjeta. Para validar tu compra y mantener tu acceso a Pro activo entre dispositivos, usamos RevenueCat como proveedor de gestión de suscripciones. RevenueCat recibe los eventos de compra (qué plan compraste, fechas de renovación, estado) y un identificador de la app anónimo. NO recibe el contenido de tus documentos, ni tu nombre, ni tu correo. Estos datos se usan solo para que la función de compra funcione (no para publicidad ni rastreo). Más información: <a href="https://www.revenuecat.com/privacy" rel="noopener" target="_blank">política de privacidad de RevenueCat</a> y de Apple/Google.</p>
+
+      <h3>7. Sin cuenta de usuario</h3>
+      <p>Nitid no tiene cuentas de usuario ni inicio de sesión. No hay perfil que crear ni eliminar, porque nunca guardamos tus datos en un servidor. Para borrar tus datos, elimina cualquier documento en la app o borra todo desde Ajustes → Borrar todos los datos; desinstalar la app también elimina los datos locales según tu sistema operativo.</p>
+
+      <h3>8. Cambios en esta política</h3>
+      <p>Si actualizamos esta política, publicaremos la nueva versión en esta misma ubicación con su fecha correspondiente.</p>
+
+      <h3>9. Contacto</h3>
+      <p>Para cualquier duda sobre privacidad, contacta con el equipo de Nitid a través del repositorio del proyecto.</p>
+    </section>
+
+    <!-- ============ ENGLISH ============ -->
+    <section id="en" lang="en" hidden>
+      <h2 class="doc-title">Privacy Policy</h2>
+      <p class="updated">Last updated: 19 Jun 2026</p>
+
+      <p class="intro">Nitid is a local-first document scanner. The principle is simple: your documents are yours and they stay on your device.</p>
+
+      <h3>1. What we handle</h3>
+      <ul>
+        <li>Documents and images you scan or import, plus their title, folder, tags and recognized text.</li>
+        <li>App preferences (default PDF size, haptics, onboarding state).</li>
+      </ul>
+      <p>All of this is stored only in your device's local storage (AsyncStorage and the app's file system). Nitid has no servers that store your documents.</p>
+
+      <h3>2. Device permissions</h3>
+      <ul>
+        <li>Camera: used only so you can capture documents. The image is saved locally.</li>
+        <li>Photos / Library: used only to import the images you select.</li>
+      </ul>
+      <p>These permissions are triggered only by an action you take, never to collect data in the background.</p>
+
+      <h3>3. What we do NOT do</h3>
+      <ul>
+        <li>We do NOT automatically upload your documents to any cloud.</li>
+        <li>We do NOT train AI models with your documents.</li>
+        <li>We do NOT show ads or track the content of your files for advertising.</li>
+        <li>We do NOT sell or share the content of your documents with third parties.</li>
+      </ul>
+
+      <h3>4. Sharing and exporting</h3>
+      <p>Sharing or exporting a document (for example generating a PDF or using the system share menu) is always a manual action you start. At that moment the file leaves the app only toward the destination you choose (Files, AirDrop, email, etc.).</p>
+
+      <h3>5. Text recognition (OCR)</h3>
+      <p>Text recognition is designed to run on the device. The app does not send images to external services to extract text.</p>
+
+      <h3>6. Purchases and subscriptions (Nitid Pro)</h3>
+      <p>If you buy Nitid Pro, payment is processed by Apple (App Store) or Google (Google Play) depending on your store; we never see or store your card details. To validate your purchase and keep your Pro access in sync across devices we use RevenueCat as a subscription-management provider. RevenueCat receives the purchase events (which plan you bought, renewal dates, status) and an anonymous app identifier. It does NOT receive the content of your documents, your name or your email. This data is used only so the purchase feature works (not for advertising or tracking). See <a href="https://www.revenuecat.com/privacy" rel="noopener" target="_blank">RevenueCat's privacy policy</a> and Apple's/Google's.</p>
+
+      <h3>7. No account required</h3>
+      <p>Nitid does not have user accounts or a login. There is no profile to create or delete, because we never hold your data on a server. To remove your data, delete any document in the app, or clear everything from Settings → Clear all data; uninstalling the app also removes local data per your operating system.</p>
+
+      <h3>8. Changes to this policy</h3>
+      <p>If we update this policy, we will publish the new version in this same place with its date.</p>
+
+      <h3>9. Contact</h3>
+      <p>For any privacy question, reach the Nitid team through the project repository.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Nitid · <span data-es="Política de privacidad" data-en="Privacy Policy"></span></footer>
+</div>
+
+<script>
+(function(){
+  var es=document.getElementById('es'), en=document.getElementById('en');
+  var bEs=document.getElementById('btn-es'), bEn=document.getElementById('btn-en');
+  function set(lang){
+    var isEs = lang==='es';
+    es.hidden=!isEs; en.hidden=isEs;
+    bEs.classList.toggle('active',isEs); bEn.classList.toggle('active',!isEs);
+    document.documentElement.lang=lang;
+    document.querySelectorAll('[data-es]').forEach(function(n){
+      n.textContent = isEs ? n.getAttribute('data-es') : n.getAttribute('data-en');
+    });
+    try{ location.hash = isEs ? '' : 'en'; }catch(e){}
+  }
+  bEs.addEventListener('click',function(){set('es')});
+  bEn.addEventListener('click',function(){set('en')});
+  // default by URL hash, else browser language, else ES
+  var initial = (location.hash.replace('#','')==='en') ? 'en'
+              : ((navigator.language||'es').slice(0,2)==='en' ? 'en' : 'es');
+  set(initial);
+})();
+</script>
+</body>
+</html>
